@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-primary: #5ab887;
+  --text-primary: #000;
+  --background-secondary: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--background-secondary);
+  padding: 50px 45px 85px 45px;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  box-shadow: 12px 12px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .title-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.container .title-container .title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container .title-container .subtitle {
+  color: #858383;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.container .form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .form-container .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.container .form-container .form .form-control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container .form-container .form .form-control label {
+  text-transform: uppercase;
+  font-size: 1.22rem;
+  font-weight: 450;
+  color: #858383;
+}
+
+.container .form-container .form .form-control .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.container .form-container .form .form-control .input .icon {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-primary);
+  color: #fff;
+  padding: 7px 12px;
+  height: 100%;
+}
+
+.container .form-container .form .form-control:nth-child(2) .input .icon i {
+  transform: rotate(90deg);
+}
+
+.container .form-container .form .form-control .input .icon i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.container .form-container .form .form-control .input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 7px 15px 7px 43px;
+  color: #565656;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.container .form-container .form .form-control .input input:hover {
+  border: 1px solid #757474;
+}
+
+.container .form-container .form .form-control .input input:focus {
+  border: 1px solid #292929;
+}
+
+.container .form-container .form .button {
+  padding: 8px 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--background-primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .form-container .form .button:hover {
+  background-color: #439269;
+}
+
+.container .form-container .other-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 0px 45px;
+  color: #818080;
+  margin-top: 10px;
+}
+
+.container .form-container .other-info a {
+  color: #818080;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .form-container .other-info a:hover {
+  color: #383737;
+  text-decoration: underline;
+}
